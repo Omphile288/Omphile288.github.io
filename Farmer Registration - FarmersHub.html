@@ -1,0 +1,109 @@
+<html>
+
+<head><title>Farmer Registration - FarmersHub</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#183f2a"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}body{margin:0;padding:28px 18px 56px;background:#f4f7f1;color:#24372b;font-family:'DM Sans',Arial,sans-serif;line-height:1.5}.container{width:min(760px,100%);margin:0 auto;padding:0 34px 30px;background:#fff;border:1px solid #e2e9df;border-radius:20px;box-shadow:0 18px 55px #183f2a12;overflow:hidden}.page-banner{margin:0 -34px 25px;padding:27px 34px 26px;background:linear-gradient(90deg,rgba(19,53,35,.84),rgba(19,53,35,.22)),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=82') center 55%/cover;color:#fff}.page-banner .eyebrow{margin:0 0 6px;color:#e1f0d8;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.page-banner h1{margin:0;color:white;font:800 30px/1.2 Manrope,Arial,sans-serif;letter-spacing:-.035em}.page-banner p{max-width:540px;margin:7px 0 0;color:#f3f7ed;font-size:14px}.form-table{width:100%;border-collapse:collapse}.form-table td{padding:10px 8px;vertical-align:middle}.form-table td:first-child{width:34%;color:#405448;font-size:14px;font-weight:700}input,select{width:100%;min-height:44px;padding:10px 12px;border:1px solid #d5dfd3;border-radius:9px;background:#fff;color:#24372b;font:14px 'DM Sans',Arial,sans-serif;transition:border .16s,box-shadow .16s}input:focus,select:focus{outline:0;border-color:#4c855a;box-shadow:0 0 0 3px #4c855a20}input::placeholder{color:#859288}button{min-height:44px;padding:11px 20px;border:0;border-radius:9px;background:#23643c;color:#fff;font:700 14px 'DM Sans',Arial,sans-serif;cursor:pointer;transition:transform .16s,background .16s}button:hover{transform:translateY(-1px);background:#17492d}button a{color:inherit;text-decoration:none}.form-actions{display:flex;justify-content:space-between;gap:12px;margin:15px 0 6px}.home-button{background:#edf3e9;color:#285537}.home-button:hover{background:#dcebd8}#output,#invoice{margin-top:22px;padding:20px;border:1px solid #b9d1b5;border-radius:12px;background:#f3f8f0}#output h2,#invoice h2{margin-top:0;color:#245537;font:700 21px Manrope,Arial,sans-serif}#output p,#invoice p{margin:8px 0}.section-title{margin:25px 0 10px;color:#2a5738;font:700 19px Manrope,Arial,sans-serif}.cart-wrap{overflow-x:auto}#cartTable{width:100%;border-collapse:collapse;border:1px solid #e1e8de;border-radius:10px;overflow:hidden}#cartTable th{padding:11px 9px;background:#edf4e9;color:#365642;text-align:left;font-size:13px}#cartTable td{padding:10px 9px;border-top:1px solid #edf0eb;font-size:14px}#grandTotal{color:#215b35;font-weight:800}.total-line{display:flex;justify-content:flex-end;align-items:center;gap:7px;margin:16px 0;font-size:18px;font-weight:700}.advertisement{margin:32px -8px 0;padding:22px;border:1px solid #e0e9dc;border-radius:16px;background:#f7faf5}.advertisement h2{margin:0 0 18px;color:#274f35;text-align:left;font:700 21px Manrope,Arial,sans-serif}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.product-card{min-width:0;padding:0 0 13px;border:1px solid #e2e8df;border-radius:12px;background:#fff;text-align:left;overflow:hidden;box-shadow:0 5px 14px #183f2a08}.product-card:before{content:'';display:block;height:105px;background-position:center;background-size:cover;background-color:#dce8d8}.product-card:nth-child(1):before{background-image:url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(2):before{background-image:url('https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(3):before{background-image:url('https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(4):before{background-image:url('https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(5):before{background-image:url('https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(6):before{background-image:url('https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(7):before{background-image:url('https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(8):before{background-image:url('https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(9):before{background-image:url('https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(10):before{background-image:url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(11):before{background-image:url('https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(12):before,.product-card:nth-child(13):before{background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(14):before{background-image:url('https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(15):before{background-image:url('https://images.unsplash.com/photo-1596097635121-14b63b7a0c19?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(16):before{background-image:url('https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(17):before{background-image:url('https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(18):before{background-image:url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=500&q=75')}.product-card h3{margin:11px 11px 4px;color:#2c563a;font:700 15px Manrope,Arial,sans-serif}.product-card p{margin:3px 11px;color:#66766b;font-size:12px}.product-card p:first-of-type{color:#2c563a;font-weight:700}#paymentDetails{padding-top:4px}#paymentDetails label{display:inline-block;margin:7px 0 2px;color:#405448;font-size:13px;font-weight:700}#paymentDetails p{color:#526658;font-size:14px}#quantity{margin-top:8px}.buyer-container{width:min(1050px,100%)}.buyer-container .page-banner{background-image:linear-gradient(90deg,rgba(19,53,35,.85),rgba(19,53,35,.2)),url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1500&q=82')}.buyer-container .form-table td{padding-top:8px;padding-bottom:8px}.buyer-container .form-table td:first-child{width:24%}.buyer-container #quantity{max-width:210px}@media(max-width:700px){body{padding:12px 10px 30px}.container{padding:0 20px 24px;border-radius:15px}.page-banner{margin:0 -20px 18px;padding:23px 20px}.page-banner h1{font-size:26px}.form-table,.form-table tbody,.form-table tr,.form-table td{display:block;width:100%}.form-table tr{padding:5px 0}.form-table td{padding:4px 0}.form-table td:first-child,.buyer-container .form-table td:first-child{width:100%;padding-top:8px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-card:before{height:100px}.advertisement{padding:15px;margin-left:-5px;margin-right:-5px}.advertisement h2{font-size:18px}.form-actions{margin-top:13px}.form-actions button{flex:1}}@media(max-width:390px){.product-grid{grid-template-columns:1fr 1fr}.product-card:before{height:82px}.container{padding-right:15px;padding-left:15px}.page-banner{margin-right:-15px;margin-left:-15px;padding-right:15px;padding-left:15px}}</style></head>
+
+<body>
+
+<div class="container"><header class="page-banner"><p class="eyebrow">Join the FarmersHub network</p><h1>Farmer Registration</h1><p>Share your farm details and connect your harvest with local customers.</p></header>
+
+
+
+<table class="form-table">
+
+<tr>
+<td>Farmer Name</td>
+<td>
+<input type="text" id="farmerName">
+</td>
+</tr>
+
+<tr>
+<td>Farm Location</td>
+<td>
+<input type="text" id="farmLocation">
+</td>
+</tr>
+
+<tr>
+<td>Phone Number / Email</td>
+<td>
+<input type="text" id="contact">
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<div class="form-actions"><button class="home-button"><a href="index.html">Home</a></button><button onclick="registerFarmer()">Register</button></div>
+
+<div id="output"></div>
+
+</div>
+
+<script>
+
+function registerFarmer()
+{
+
+    var nameOfTheFarmer =
+    document.getElementById("farmerName").value;
+
+    var farmLocation =
+    document.getElementById("farmLocation").value;
+
+    var farmerContactDetails =
+    document.getElementById("contact").value;
+
+    if(nameOfTheFarmer=="" ||
+       farmLocation=="" ||
+       farmerContactDetails=="")
+    {
+
+        alert("Please complete all the fields.");
+
+        return;
+
+    }
+
+    var farmerID =
+    "FARMER-" +
+    Math.floor(Math.random()*9000+1000);
+
+    var SUBSCRIPTION_FEE = 50.00;
+
+    document.getElementById("output").style.display="block";
+
+    document.getElementById("output").innerHTML=
+
+    "<h2>Registration Successful!</h2>" +
+
+    "<p><b>Farmer ID:</b> " +
+    farmerID +
+    "</p>" +
+
+    "<p><b>Farmer Name:</b> " +
+    nameOfTheFarmer +
+    "</p>" +
+
+    "<p><b>Farm Location:</b> " +
+    farmLocation +
+    "</p>" +
+
+    "<p><b>Contact Details:</b> " +
+    farmerContactDetails +
+    "</p>" +
+
+    "<p><b>Monthly Intermediary Subscription Fee Due:</b> R" +
+    SUBSCRIPTION_FEE.toFixed(2) +
+    "</p>";
+
+}
+
+</script>
+
+</body>
+
+</html>
+
