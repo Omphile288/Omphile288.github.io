@@ -1,0 +1,508 @@
+<html>
+
+	<head><title>Buyer Registration - FarmersHub</title>
+			<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#183f2a"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"><style>
+				*{box-sizing:border-box}body{margin:0;padding:28px 18px 56px;background:#f4f7f1;color:#24372b;font-family:'DM Sans',Arial,sans-serif;line-height:1.5}.container{width:min(760px,100%);margin:0 auto;padding:0 34px 30px;background:#fff;border:1px solid #e2e9df;border-radius:20px;box-shadow:0 18px 55px #183f2a12;overflow:hidden}.page-banner{margin:0 -34px 25px;padding:27px 34px 26px;background:linear-gradient(90deg,rgba(19,53,35,.84),rgba(19,53,35,.22)),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=82') center 55%/cover;color:#fff}.page-banner .eyebrow{margin:0 0 6px;color:#e1f0d8;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.page-banner h1{margin:0;color:white;font:800 30px/1.2 Manrope,Arial,sans-serif;letter-spacing:-.035em}.page-banner p{max-width:540px;margin:7px 0 0;color:#f3f7ed;font-size:14px}.form-table{width:100%;border-collapse:collapse}.form-table td{padding:10px 8px;vertical-align:middle}.form-table td:first-child{width:34%;color:#405448;font-size:14px;font-weight:700}input,select{width:100%;min-height:44px;padding:10px 12px;border:1px solid #d5dfd3;border-radius:9px;background:#fff;color:#24372b;font:14px 'DM Sans',Arial,sans-serif;transition:border .16s,box-shadow .16s}input:focus,select:focus{outline:0;border-color:#4c855a;box-shadow:0 0 0 3px #4c855a20}input::placeholder{color:#859288}button{min-height:44px;padding:11px 20px;border:0;border-radius:9px;background:#23643c;color:#fff;font:700 14px 'DM Sans',Arial,sans-serif;cursor:pointer;transition:transform .16s,background .16s}button:hover{transform:translateY(-1px);background:#17492d}button a{color:inherit;text-decoration:none}.form-actions{display:flex;justify-content:space-between;gap:12px;margin:15px 0 6px}.home-button{background:#edf3e9;color:#285537}.home-button:hover{background:#dcebd8}#output:empty,#invoice:empty{display:none}#output,#invoice{margin-top:22px;padding:20px;border:1px solid #b9d1b5;border-radius:12px;background:#f3f8f0}#output h2,#invoice h2{margin-top:0;color:#245537;font:700 21px Manrope,Arial,sans-serif}#output p,#invoice p{margin:8px 0}.section-title{margin:25px 0 10px;color:#2a5738;font:700 19px Manrope,Arial,sans-serif}.cart-wrap{overflow-x:auto}#cartTable{width:100%;border-collapse:collapse;border:1px solid #e1e8de;border-radius:10px;overflow:hidden}#cartTable th{padding:11px 9px;background:#edf4e9;color:#365642;text-align:left;font-size:13px}#cartTable td{padding:10px 9px;border-top:1px solid #edf0eb;font-size:14px}.remove-cart-item{padding:7px 10px;border:1px solid #b42318;border-radius:7px;background:#fff;color:#b42318;font-weight:700;cursor:pointer}.remove-cart-item:hover{background:#fff1f0}#grandTotal{color:#215b35;font-weight:800}.total-line{display:flex;justify-content:flex-end;align-items:center;gap:7px;margin:16px 0;font-size:18px;font-weight:700}.advertisement{margin:32px -8px 0;padding:22px;border:1px solid #e0e9dc;border-radius:16px;background:#f7faf5}.advertisement h2{margin:0 0 18px;color:#274f35;text-align:left;font:700 21px Manrope,Arial,sans-serif}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.product-card{min-width:0;padding:0 0 13px;border:1px solid #e2e8df;border-radius:12px;background:#fff;text-align:left;overflow:hidden;box-shadow:0 5px 14px #183f2a08}.product-card:before{content:'';display:block;height:105px;background-position:center;background-size:cover;background-color:#dce8d8}.product-card:nth-child(1):before{background-image:url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(2):before{background-image:url('https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(3):before{background-image:url('https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(4):before{background-image:url('https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(5):before{background-image:url('https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(6):before{background-image:url('https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(7):before{background-image:url('https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(8):before{background-image:url('https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(9):before{background-image:url('https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(10):before{background-image:url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(11):before{background-image:url('https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(12):before,.product-card:nth-child(13):before{background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(14):before{background-image:url('https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(15):before{background-image:url('https://images.unsplash.com/photo-1673533537845-7f7498faf85f?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(16):before{background-image:url('https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(17):before{background-image:url('https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=500&q=75')}.product-card:nth-child(18):before{background-image:url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=500&q=75')}.product-card h3{margin:11px 11px 4px;color:#2c563a;font:700 15px Manrope,Arial,sans-serif}.product-card p{margin:3px 11px;color:#66766b;font-size:12px}.product-card p:first-of-type{color:#2c563a;font-weight:700}#paymentDetails{padding-top:4px}#paymentDetails label{display:inline-block;margin:7px 0 2px;color:#405448;font-size:13px;font-weight:700}#paymentDetails p{color:#526658;font-size:14px}#quantity{margin-top:8px}.buyer-container{width:min(1050px,100%)}.buyer-container .page-banner{background-image:linear-gradient(90deg,rgba(19,53,35,.85),rgba(19,53,35,.2)),url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1500&q=82')}.buyer-container .form-table td{padding-top:8px;padding-bottom:8px}.buyer-container .form-table td:first-child{width:24%}.buyer-container #quantity{max-width:210px}@media(max-width:700px){body{padding:12px 10px 30px}.container{padding:0 20px 24px;border-radius:15px}.page-banner{margin:0 -20px 18px;padding:23px 20px}.page-banner h1{font-size:26px}.form-table,.form-table tbody,.form-table tr,.form-table td{display:block;width:100%}.form-table tr{padding:5px 0}.form-table td{padding:4px 0}.form-table td:first-child,.buyer-container .form-table td:first-child{width:100%;padding-top:8px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-card:before{height:100px}.advertisement{padding:15px;margin-left:-5px;margin-right:-5px}.advertisement h2{font-size:18px}.form-actions{margin-top:13px}.form-actions button{flex:1}}@media(max-width:390px){.product-grid{grid-template-columns:1fr 1fr}.product-card:before{height:82px}.container{padding-right:15px;padding-left:15px}.page-banner{margin-right:-15px;margin-left:-15px;padding-right:15px;padding-left:15px}}</style></head>
+
+	<body>
+
+		<div class="container buyer-container"><header class="page-banner"><p class="eyebrow">Seasonal produce, sourced locally</p><h1>Buyer Registration</h1><p>Build your order from fresh farm goods and arrange delivery in a few simple steps.</p></header>
+
+			
+
+			<table class="form-table">
+
+			<tr>
+			<td>Name</td>
+			<td><input type="text" id="customerName" pattern="[A-Za-zÀ-ÖØ-öø-ÿ .'-]+" title="Enter a name using letters only." autocomplete="name"></td>
+			</tr>
+
+			<tr>
+			<td>Delivery Address</td>
+			<td><input type="text" id="address"></td>
+			</tr>
+
+			<tr>
+			<td>Phone Number (10 digits)</td>
+			<td><input type="tel" id="contact" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter exactly 10 digits." autocomplete="tel"></td>
+			</tr>
+
+			<tr>
+
+			<td>Select Product</td>
+
+			<td>
+
+			<select id="product">
+
+			<option value="Potatoes">Potatoes</option>
+			<option value="Onions">Onions</option>
+			<option value="Tomatoes">Tomatoes</option>
+			<option value="Carrots">Carrots</option>
+			<option value="Butternut">Butternut</option>
+			<option value="Cabbage">Cabbage</option>
+			<option value="Green Peppers">Green Peppers</option>
+			<option value="Spinach">Spinach</option>
+
+			<option value="Bananas">Bananas</option>
+			<option value="Apples">Apples</option>
+			<option value="Oranges">Oranges</option>
+			<option value="Avocados">Avocados</option>
+			<option value="Watermelon">Watermelon</option>
+
+			<option value="White Maize">White Maize</option>
+			<option value="Yellow Maize">Yellow Maize</option>
+			<option value="Sugar Beans">Sugar Beans</option>
+			<option value="Sweet Potatoes">Sweet Potatoes</option>
+
+			<option value="Eggs">Eggs</option>
+			<option value="Milk">Milk</option>
+			<option value="Live Chicken Broiler">Live Chicken Broiler</option>
+
+			</select>
+
+			<br><br>
+
+			<input type="number" id="quantity" min="1" step="1" placeholder="Quantity">
+
+			<br><br>
+
+			<button type="button" onclick="addToCart()">
+			Add to Cart
+			</button>
+
+			</td>
+
+			</tr>
+		
+			<tr>
+			
+			<td>Payment Method</td>
+
+			<td>
+
+			<select id="payment" onchange="showPaymentFields()">
+
+			<option value="">-- Select Payment Method --</option>
+
+			<option value="Cash">Cash on Delivery</option>
+
+			<option value="EFT">Electronic Funds Transfer (EFT)</option>
+
+			<option value="Card">Debit / Credit Card</option>
+
+			<option value="Wallet">Mobile Wallet</option>
+
+			</select>
+
+			<br><br>
+
+			<div id="paymentDetails"></div>
+
+			</td>
+
+			</tr>
+			
+			</table>
+
+			<br>
+
+			<h2 class="section-title">Shopping Cart</h2>
+
+			<div class="cart-wrap"><table id="cartTable">
+
+			<tr>
+
+			<th>Product</th>
+
+			<th>Quantity</th>
+
+			<th>Unit Price</th>
+
+			<th>Total</th>
+
+			</tr>
+
+			</table></div>
+
+			<p class="subtitle">A flat R35.00 delivery fee is added to each order.</p>
+			<div class="total-line">
+
+			Grand Total: R
+
+			<span id="grandTotal">0.00</span>
+
+			</div>
+
+		<div class="form-actions"><button class="home-button" type="button"><a href="index.html">Home</a></button><button type="button" onclick="placeOrder()">Place Order</button></div>
+
+			<div id="invoice"></div>
+			
+			<div class="advertisement">
+
+			<h2>🌱 Available Products on FarmersHub 🌱</h2>
+
+			<div class="product-grid">
+
+			<div class="product-card">
+			<h3>🥔 Potatoes</h3>
+			<p>R8.50 per kg</p>
+			<p>Fresh farm potatoes.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🧅 Onions</h3>
+			<p>R9.50 per kg</p>
+			<p>Locally grown onions.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🍅 Tomatoes</h3>
+			<p>R11.00 per kg</p>
+			<p>Fresh red tomatoes.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🥕 Carrots</h3>
+			<p>R6.00 per kg</p>
+			<p>Crunchy fresh carrots.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🎃 Butternut</h3>
+			<p>R6.50 each</p>
+			<p>Healthy butternut squash.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🥬 Spinach</h3>
+			<p>R24.00 per bunch</p>
+			<p>Fresh green spinach.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🍌 Bananas</h3>
+			<p>R6.25 each</p>
+			<p>Sweet ripe bananas.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🍎 Apples</h3>
+			<p>R10.50 each</p>
+			<p>Crisp red apples.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🍊 Oranges</h3>
+			<p>R5.00 each</p>
+			<p>Juicy oranges.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🥑 Avocados</h3>
+			<p>R18.75 each</p>
+			<p>Fresh creamy avocados.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🍉 Watermelon</h3>
+			<p>R60.00 each</p>
+			<p>Large sweet watermelon.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🌽 White Maize</h3>
+			<p>R80.00 per bag</p>
+			<p>Premium white maize.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🌽 Yellow Maize</h3>
+			<p>R70.00 per bag</p>
+			<p>High-quality yellow maize.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🫘 Sugar Beans</h3>
+			<p>R210.00 per bag</p>
+			<p>Nutritious sugar beans.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🍠 Sweet Potatoes</h3>
+			<p>R55.00 per bag</p>
+			<p>Fresh sweet potatoes.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🥚 Eggs</h3>
+			<p>R85.00 per tray</p>
+			<p>Farm fresh eggs.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🥛 Milk</h3>
+			<p>R13.50 per litre</p>
+			<p>Fresh dairy milk.</p>
+			</div>
+
+			<div class="product-card">
+			<h3>🐔 Live Chicken Broiler</h3>
+			<p>R95.00 each</p>
+			<p>Healthy live broiler chickens.</p>
+			</div>
+
+			</div>
+
+			</div>
+
+		</div>
+
+			<script>
+const cataloguePrices = {
+    Potatoes: 8.50, Onions: 9.50, Tomatoes: 11.00, Carrots: 6.00,
+    Butternut: 6.50, Cabbage: 6.25, 'Green Peppers': 14.00, Spinach: 24.00,
+    Bananas: 6.25, Apples: 10.50, Oranges: 5.00, Avocados: 18.75,
+    Watermelon: 60.00, 'White Maize': 80.00, 'Yellow Maize': 70.00,
+    'Sugar Beans': 210.00, 'Sweet Potatoes': 55.00, Eggs: 85.00,
+    Milk: 13.50, 'Live Chicken Broiler': 95.00
+};
+const listingsKey = 'farmersHubListings';
+const cart = [];
+const productSelect = document.getElementById('product');
+const paymentDetails = document.getElementById('paymentDetails');
+const cartTable = document.getElementById('cartTable');
+const farmerProducts = loadFarmerProducts();
+
+function loadFarmerProducts() {
+    try {
+        const saved = JSON.parse(localStorage.getItem(listingsKey) || '[]');
+        return Array.isArray(saved) ? saved : [];
+    } catch (error) {
+        console.warn('Farmer listings could not be loaded.', error);
+        return [];
+    }
+}
+
+function getSelectedProduct() {
+    const selectedValue = productSelect.value;
+    if (selectedValue.startsWith('farmer:')) {
+        return farmerProducts.find((item) => item.id === selectedValue.slice(7)) || null;
+    }
+
+    const option = productSelect.selectedOptions[0];
+    return {
+        productName: selectedValue,
+        unit: option.dataset.unit || ({ Butternut: 'each', Bananas: 'each', Apples: 'each', Oranges: 'each', Avocados: 'each', Watermelon: 'each', Eggs: 'tray', Milk: 'litre', 'Live Chicken Broiler': 'each', 'White Maize': 'bag', 'Yellow Maize': 'bag', 'Sugar Beans': 'bag', 'Sweet Potatoes': 'bag', Spinach: 'bunch' }[selectedValue] || 'kg'),
+        price: cataloguePrices[selectedValue],
+        quantity: null
+    };
+}
+
+farmerProducts.forEach((product) => {
+    const option = document.createElement('option');
+    option.value = `farmer:${product.id}`;
+    option.textContent = `${product.productName} — R${Number(product.price).toFixed(2)} / ${product.unit} (Farmer listed)`;
+    option.dataset.unit = product.unit;
+    productSelect.appendChild(option);
+});
+
+function showPaymentFields() {
+    const payment = document.getElementById('payment').value;
+    paymentDetails.replaceChildren();
+    if (!payment) return;
+
+    const notice = document.createElement('p');
+    notice.textContent = payment === 'Cash'
+        ? 'Payment is marked as cash on delivery in this demonstration.'
+        : 'Demo only: payment details are not sent to a bank or payment provider, and are not saved.';
+    paymentDetails.appendChild(notice);
+
+    const fieldSets = {
+        Card: [
+            { id: 'cardholderName', label: 'Cardholder Name', type: 'text', pattern: '[A-Za-zÀ-ÖØ-öø-ÿ .\'-]+', autocomplete: 'cc-name' },
+            { id: 'cardNumber', label: 'Card Number', type: 'text', pattern: '[0-9]{13,19}', inputMode: 'numeric', maxLength: 19, autocomplete: 'cc-number' },
+            { id: 'cardExpiry', label: 'Expiry Date', type: 'month', min: new Date().toISOString().slice(0, 7), autocomplete: 'cc-exp' },
+            { id: 'cardCvv', label: 'Security Code (CVV)', type: 'password', pattern: '[0-9]{3,4}', inputMode: 'numeric', maxLength: 4, autocomplete: 'cc-csc' }
+        ],
+        EFT: [
+            { id: 'bankName', label: 'Bank Name', type: 'text', pattern: '[A-Za-zÀ-ÖØ-öø-ÿ .\'-]+' },
+            { id: 'accountHolder', label: 'Account Holder Name', type: 'text', pattern: '[A-Za-zÀ-ÖØ-öø-ÿ .\'-]+' },
+            { id: 'accountNumber', label: 'Account Number', type: 'text', pattern: '[0-9]{7,20}', inputMode: 'numeric', maxLength: 20 },
+            { id: 'branchCode', label: 'Branch Code', type: 'text', pattern: '[0-9]{6}', inputMode: 'numeric', maxLength: 6 }
+        ],
+        Wallet: [
+            { id: 'walletNumber', label: 'Mobile Wallet Number', type: 'tel', pattern: '[0-9]{10,15}', inputMode: 'numeric', maxLength: 15, autocomplete: 'tel' }
+        ]
+    };
+
+    (fieldSets[payment] || []).forEach((field) => {
+        const label = document.createElement('label');
+        label.htmlFor = field.id;
+        label.textContent = field.label;
+        const input = document.createElement('input');
+        input.id = field.id;
+        input.name = field.id;
+        input.type = field.type;
+        input.required = true;
+        if (field.pattern) input.pattern = field.pattern;
+        if (field.inputMode) input.inputMode = field.inputMode;
+        if (field.maxLength) input.maxLength = field.maxLength;
+        if (field.min) input.min = field.min;
+        if (field.autocomplete) input.autocomplete = field.autocomplete;
+        paymentDetails.append(label, input);
+    });
+}
+
+function validatePaymentDetails(payment) {
+    if (payment === 'Cash' || !payment) return true;
+
+    const fieldsByPayment = {
+        Card: ['cardholderName', 'cardNumber', 'cardExpiry', 'cardCvv'],
+        EFT: ['bankName', 'accountHolder', 'accountNumber', 'branchCode'],
+        Wallet: ['walletNumber']
+    };
+    const fields = fieldsByPayment[payment] || [];
+    for (const id of fields) {
+        const input = document.getElementById(id);
+        if (!input || !input.reportValidity()) return false;
+    }
+    return true;
+}
+
+function addToCart() {
+    const product = getSelectedProduct();
+    const quantityInput = document.getElementById('quantity');
+    const quantity = Number(quantityInput.value);
+
+    if (!product || !Number.isInteger(quantity) || quantity < 1) {
+        alert('Choose a product and enter a whole-number quantity of at least 1.');
+        return;
+    }
+    if (product.quantity !== null && quantity > Number(product.quantity)) {
+        alert(`Only ${product.quantity} units are currently listed by the farmer.`);
+        return;
+    }
+
+    const existing = cart.find((item) => item.id === (product.id || product.productName));
+    if (existing) {
+        if (product.quantity !== null && existing.quantity + quantity > Number(product.quantity)) {
+            alert(`Only ${product.quantity} units are currently listed by the farmer.`);
+            return;
+        }
+        existing.quantity += quantity;
+        existing.total = existing.quantity * existing.price;
+    } else {
+        cart.push({
+            id: product.id || product.productName,
+            product: product.productName,
+            unit: product.unit,
+            quantity,
+            price: Number(product.price),
+            total: Number(product.price) * quantity
+        });
+    }
+
+    quantityInput.value = '';
+    renderCart();
+}
+
+function renderCart() {
+    cartTable.replaceChildren();
+    const header = cartTable.insertRow();
+    ['Product', 'Quantity', 'Unit Price', 'Total', 'Action'].forEach((label) => {
+        const cell = document.createElement('th');
+        cell.scope = 'col';
+        cell.textContent = label;
+        header.appendChild(cell);
+    });
+
+    cart.forEach((item) => {
+        const row = cartTable.insertRow();
+        [item.product, `${item.quantity} ${item.unit}`, `R${item.price.toFixed(2)}`, `R${item.total.toFixed(2)}`]
+            .forEach((value) => {
+                const cell = row.insertCell();
+                cell.textContent = value;
+            });
+        const actionCell = row.insertCell();
+        const removeButton = document.createElement('button');
+        removeButton.type = 'button';
+        removeButton.className = 'remove-cart-item';
+        removeButton.dataset.removeCartItem = item.id;
+        removeButton.textContent = 'Remove';
+        removeButton.setAttribute('aria-label', `Remove ${item.product} from cart`);
+        actionCell.appendChild(removeButton);
+    });
+    document.getElementById('grandTotal').textContent = cart
+        .reduce((total, item) => total + item.total, 0).toFixed(2);
+}
+
+cartTable.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-remove-cart-item]');
+    if (!button) return;
+    const itemIndex = cart.findIndex((item) => item.id === button.dataset.removeCartItem);
+    if (itemIndex !== -1) {
+        cart.splice(itemIndex, 1);
+        renderCart();
+    }
+});
+
+function placeOrder() {
+    const totalQuantity = cart.reduce((total, item) => total + Number(item.quantity), 0);
+    if (cart.length === 0 || totalQuantity <= 0) {
+        alert('Add a product with a quantity greater than zero before placing your order.');
+        return;
+    }
+
+    const nameInput = document.getElementById('customerName');
+    const rawCustomerName = nameInput.value.trim();
+    if (rawCustomerName && !/^[\p{L}\p{M} .'-]+$/u.test(rawCustomerName)) {
+        alert('Enter the customer name using letters only.');
+        nameInput.focus();
+        return;
+    }
+
+    const customerName = rawCustomerName || 'Not provided';
+    const address = document.getElementById('address').value.trim() || 'Not provided';
+    const rawContact = document.getElementById('contact').value.trim();
+    if (rawContact && !/^\d{10}$/.test(rawContact)) {
+        alert('Enter a phone number using exactly 10 digits.');
+        document.getElementById('contact').focus();
+        return;
+    }
+    const contact = rawContact || 'Not provided';
+    const payment = document.getElementById('payment').value;
+    if (!validatePaymentDetails(payment)) return;
+
+    const deliveryCost = 35;
+    const subtotal = cart.reduce((total, item) => total + item.total, 0);
+    const invoice = document.getElementById('invoice');
+    invoice.replaceChildren();
+
+    const heading = document.createElement('h2');
+    heading.textContent = 'Order Summary';
+    invoice.appendChild(heading);
+    const details = [
+        ['Customer', customerName],
+        ['Delivery Address', address],
+        ['Contact', contact],
+        ...cart.map((item) => [item.product, `${item.quantity} ${item.unit} — R${item.total.toFixed(2)}`]),
+        ['Flat Delivery Fee', `R${deliveryCost.toFixed(2)}`],
+        ['Total', `R${(subtotal + deliveryCost).toFixed(2)}`],
+        ['Payment Method', payment ? document.getElementById('payment').selectedOptions[0].textContent : 'Not provided'],
+        ['Order Status', 'Pending (demonstration only)']
+    ];
+
+    details.forEach(([label, value]) => {
+        const line = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = `${label}: `;
+        line.append(strong, document.createTextNode(value));
+        invoice.appendChild(line);
+    });
+    invoice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+</script>
+</body>
+</html>
